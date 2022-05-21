@@ -29,21 +29,25 @@
 //include <curses.h>
 //#include <ncurses.h>
 #include <math.h>//数学库->sqrt()开平方；
-//##################函数的声明和定义#########
-int fac(int n){
-    if(n != 1)
-       return n*fac(n-1);
-    else
-        return 1; 
-}
-int main(){
-    int n = 0;
-    printf("请输入要求得的阶乘:>");
-    scanf("%d",&n);
-    int ret = fac(n);
-    printf("n! = %d",ret);
-    return 0;
-}
+//##################函数的声明和定义(有递归)#########
+
+//斐波那契额数列
+//1 1 2 3 5 8 13 21 34 55前两个数之和等于第三个
+
+// int fac(int n){//给递归求阶乘#####################
+//     if(n != 1)
+//        return n*fac(n-1);
+//     else
+//         return 1; 
+// }
+// int main(){
+//     int n = 0;
+//     printf("请输入要求得的阶乘:>");
+//     scanf("%d",&n);
+//     int ret = fac(n);
+//     printf("%d! = %d",n,ret);
+//     return 0;
+// }
 
 // int my_strlen(char* len){//模拟一个strlen函数
 //     int count = 0;//普通方法需要创建一个临时变量；
